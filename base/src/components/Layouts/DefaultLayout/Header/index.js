@@ -7,6 +7,7 @@ import 'tippy.js/dist/tippy.css';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner, faCircleXmark, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import AccountItem from '~/components/AccountItem';
 
 const cx = className.bind(Style);
 function Header() {
@@ -22,7 +23,11 @@ function Header() {
                     interactive={true}
                     render={(attrs) => (
                         <div className={cx('search-result')} tabIndex="-1" {...attrs}>
-                            <PopperWrapper>Keysadaaaaaaaaaa</PopperWrapper>
+                            <PopperWrapper>
+                                <AccountItem />
+                                <AccountItem />
+                                <AccountItem />
+                            </PopperWrapper>
                         </div>
                     )}
                 >
